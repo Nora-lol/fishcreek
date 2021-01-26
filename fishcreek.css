@@ -12,10 +12,10 @@ body {
 }
 header { 
         background-color: #003366;
-        background-image: url(fishcreeklogo.gif);
+        color: #F0F0F;
+        background-image: url(https://drive.google.com/thumbnail?id=1a-YLrNxPDnSmOrEw3xbOF6YYnFfzb3OL&authuser=0&sz=w932-h875);
         background position: center;
         background-repeat: no-repeat;
-        color: #F0F0F0;
         font-family: Georgia, "Times New Roman", serif;
         padding:1em;
         text-align: center;
