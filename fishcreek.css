@@ -88,11 +88,11 @@ font-weight: bold;
   padding-left: 1em;
   padding-right: 1em;
 }
-footer {
+footer { 
 background-color: #AEC3E3;
 font-size: .70em;
 font-style: italic;
-text-align: center;
-padding-bottom: .5em;
+margin-left: 180px;
+padding: 1em;
 text-align: center;
 }
