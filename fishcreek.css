@@ -38,22 +38,21 @@ nav ul {
     list-style-type: none;
   margin: 0;
   padding: 0;
-  
-  float: left;
-font-weight: bold;
-padding: .5em;
-width: 180px;
 }
-nav ul { list-style-type: none; }
+nav li {
+  border-bottom: 1px solid #AEC3E3;
+  padding-bottom:.5em;
+  padding-top: .5em;
+  width: 100%;
+}
 nav a { text-decoration: none; }
-nav a:link       { color: #000066; }
-nav a:visited { color: #5280C5; }
-nav a:hover     { color: #3262A3; }
-main {
+nav a:link        { color: #000066; }
+nav a:visited { color: #5280C5;
+  nav a:hover      { color: #3262A3; }
+  main {
   background-color: #FFF;
   border: 1px solid #AEC3E3;
   display: block;
-  margin-left: 180px;
   overflow: auto;
 padding-left: 2em;
 padding-right: 2em;
@@ -66,12 +65,9 @@ font-weight: bold;
 }
 section {
   background-color: #EAEAEA;
-  float: left;
   margin-bottom: 1em;
   margin-right: 1em;
-  min-height: 200px;
   padding: 0;
-  width: 30%
 }
 section h3 {
   background-color: #AEc3E3;
@@ -87,11 +83,8 @@ font-family: Georgia, "Times New Roman", serif;
 font-weight: bold;
 }
 .address { clear: left; }
-.floatright {
-  float: right;
-  padding-left: 1em;
-  padding-right: 1em;
-}
+  #mobile { display: inline; }
+  #desktop { display: none; }
 footer { 
 background-color: #AEC3E3;
 font-size: .70em;
@@ -99,4 +92,43 @@ font-style: italic;
 margin-left: 180px;
 padding: 1em;
 text-align: center;
-}
+@media (min-width: 600px) {
+  header {background-image: url(bigfish.gif); }
+  h1 { font-size: 3em; }
+  nav ul { flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-around; }
+  nav li { border-bottom: none; }
+  #flow {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  section {
+    flex: 1;
+    min-width: 30%;
+  }
+  dl ( flex: 2; }
+  img { flex: 1; }
+  #mobile { display: none: }
+  #desktop { display: inline; }
+  }
+  @media (min-wdth: 1024px) {
+    @supports (display: grid) {
+      header { grid-area: header; }
+      nav { grid-area; nav; }
+      main { grid-area: main; }
+      footer { grid-area: footer; }
+      #wrapper {
+        display: grid;
+        grid-template:
+          "header header"
+          "nav main"
+          "footer footer"
+          / 180px ;
+      }
+        nav ul {
+          flex-direction: column;
+          font-weight: bold;
+          font-size: 1.25em; }
+      }
+    }
