@@ -34,8 +34,8 @@ nav { text-align: center; }
 nav ul {
   display: flex;
   flex-direction: column;
-  font-size: 1.5em
-    list-style-type: none;
+  font-size: 1.5em;
+ list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -101,6 +101,7 @@ font-style: italic;
 margin-left: 180px;
 padding: 1em;
 text-align: center;
+  }
 @media (min-width: 600px) {
   header {background-image: url(bigfish.gif); }
   h1 { font-size: 3em; }
@@ -124,7 +125,7 @@ text-align: center;
   @media (min-wdth: 1024px) {
     @supports (display: grid) {
       header { grid-area: header; }
-      nav { grid-area; nav; }
+      nav { grid-area: nav; }
       main { grid-area: main; }
       footer { grid-area: footer; }
       #wrapper {
