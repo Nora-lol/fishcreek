@@ -47,7 +47,7 @@ nav li {
 }
 nav a { text-decoration: none; }
 nav a:link        { color: #000066; }
-nav a:visited { color: #5280C5;
+nav a:visited { color: #5280C5; }
   nav a:hover      { color: #3262A3; }
   main {
   background-color: #FFF;
