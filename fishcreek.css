@@ -68,6 +68,39 @@ margin: 1em;
 border: 2px solid #000033; 
 border-collapse: collapse; 
 }
+td, th { 
+padding: 0.5em;
+border: 1px solid #000033;
+}
+section {
+  background-color: #EAEAEA;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  padding: 0;
+}
+section h3 {
+  background-color: #AEc3E3;
+  font-size: 110%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: .25em;
+}
+section p { padding: 0.25em .25em .25em; }
+.category {
+color: #5380C5;
+font-family: Georgia, "Times New Roman", serif;
+font-weight: bold;
+}
+.address { clear: left; }
+  #mobile { display: inline; }
+  #desktop { display: none; }
+footer { 
+background-color: #AEC3E3;
+font-size: .70em;
+font-style: italic;
+padding: 1em;
+text-align: center;
+}
 form { 
 display: flex;
 flex-direction: column;
@@ -123,41 +156,6 @@ font-weight: bold;
 font-size: 1.25em; }
 }
 } /* MAKE SURE YOU HAVE THE TWO BRACES */
-
-
-td, th { 
-padding: 0.5em;
-border: 1px solid #000033;
-}
-section {
-  background-color: #EAEAEA;
-  margin-bottom: 1em;
-  margin-right: 1em;
-  padding: 0;
-}
-section h3 {
-  background-color: #AEc3E3;
-  font-size: 110%;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: .25em;
-}
-section p { padding: 0.25em .25em .25em; }
-.category {
-color: #5380C5;
-font-family: Georgia, "Times New Roman", serif;
-font-weight: bold;
-}
-.address { clear: left; }
-  #mobile { display: inline; }
-  #desktop { display: none; }
-footer { 
-background-color: #AEC3E3;
-font-size: .70em;
-font-style: italic;
-padding: 1em;
-text-align: center;
-  }
 @media (min-width: 600px) {
   header {background-image: url(bigfish.gif); }
   h1 { font-size: 3em; }
